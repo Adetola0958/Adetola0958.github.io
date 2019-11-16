@@ -1,0 +1,91 @@
+body {
+    color: white;
+}
+.background{
+    background: url(img/intro-bg.jpg);
+}
+.img-de {
+    height: 50px;
+    width : 200px;
+}
+.custom-toggler .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar-nav {
+    float : right;
+}
+.fixed {
+    border-bottom : 1px solid red;
+    color: white !important;
+}
+.nav-link:hover {
+    border-bottom : 1px solid red;
+    color : white
+}
+.nav-link {
+    color: rgba(255, 255, 255, 0.6)
+}
+.intro {
+    color: white;
+    font-size: 4rem;
+    font-weight: 600;
+}
+.marketing {
+    color: red;
+}
+.first-para{
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+.play{
+    font-size: 7rem;
+    color: red;
+}
+.btn-default {
+   border: 2px solid red;
+   background: inherit;
+   border-radius: 19px;
+   color: white;
+}
+.about {
+    background: url(img/about-bg.jpg);
+}
+.event-head {
+    color: black;
+    font-weight: 650;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.event-para {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 1.5rem;
+}
+.underline{
+    width: 70px;
+    background-color: red;
+    height: 2px;
+}
+.first-bg {
+    height: 250px;
+    background: url(img/4.jpg);
+    position: relative;
+    background-size: cover;
+    margin-bottom: 1.7rem;
+}
+.second-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(62, 62, 87, 0.6)
+}
+
+@media (max-width: 576px) {
+    .intro{
+        font-size: 3rem;
+        font-weight: 500;
+    }
+    .first-para {
+        font-size: 1rem
+    }
+}
