@@ -3,6 +3,19 @@ body {
 }
 .background{
     background: url(img/intro-bg.jpg);
+    width: 100%;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+.background:before {
+    content:"";
+    background: rgba(6, 12, 34, 0.7);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 .img-de {
     height: 50px;
@@ -15,11 +28,11 @@ body {
     float : right;
 }
 .fixed {
-    border-bottom : 1px solid red;
+    border-bottom : 1px solid #f82249;
     color: white !important;
 }
 .nav-link:hover {
-    border-bottom : 1px solid red;
+    border-bottom : 1px solid #f82249;
     color : white
 }
 .nav-link {
@@ -31,7 +44,7 @@ body {
     font-weight: 600;
 }
 .marketing {
-    color: red;
+    color: #f82249;
 }
 .first-para{
     font-weight: 500;
@@ -39,10 +52,10 @@ body {
 }
 .play{
     font-size: 7rem;
-    color: red;
+    color: #f82249;
 }
 .btn-default {
-   border: 2px solid red;
+   border: 2px solid #f82249;
    background: inherit;
    border-radius: 19px;
    color: white;
@@ -51,7 +64,7 @@ body {
     background: url(img/about-bg.jpg);
 }
 .event-head {
-    color: black;
+    color: #0e1b4d;
     font-weight: 650;
     font-size: 3rem;
     text-transform: uppercase;
@@ -59,10 +72,11 @@ body {
 .event-para {
     color: rgba(0, 0, 0, 0.6);
     font-size: 1.5rem;
+    opacity: 0.6;
 }
 .underline{
     width: 70px;
-    background-color: red;
+    background-color: #f82249;
     height: 2px;
 }
 .first-bg {
@@ -79,7 +93,178 @@ body {
     right: 0;
     background: rgba(62, 62, 87, 0.6)
 }
-
+.sub-heading {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 400;
+    font-style: italic;
+    color: #0e1b4d;
+}
+.event-tabs {
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+.event-tabs li {
+    display: inline-block;
+    margin-bottom: 0
+}
+.event-tabs a {
+    border-radius: 50px;
+    font-weight: 600;
+    padding: 10px 100px;
+    background: #0e1b4d;
+    color: white;
+}
+.event-tabs a.stay {
+    background-color: #f82249;
+    color: white;
+}
+.event-tabs a:hover {
+    text-decoration: none;
+}
+.event-item {
+    border-bottom: 1px solid #cad4f6;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.event-item time {
+    padding-bottom: 5px;
+    display: inline-block;
+    font-size: 20px;
+    color: #0e1b4d;
+}
+.event-item:hover {
+    background-color: white;
+}
+.event-item h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #0e1b4d;
+}
+.event-item p {
+    font-style: italic;
+    color: #152b79;
+    margin-bottom: 0;
+}
+.event-item h4 span {
+    font-style: italic;
+    color: #19328e;
+    font-weight: normal;
+    font-size: 16px;
+}
+.event-item .speaker img {
+    height: 100%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    margin-left: 50%;
+}
+.event-item .speaker {
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 50%;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+.venue-pic1 img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    min-height: 300px;
+}
+.aside-info {
+    background: url(img/5.jpg);
+    background-size: cover;
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.aside-info:before {
+    content:"";
+    background: rgba(13, 20, 41, 0.8);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.aside-info h3 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+}
+.aside-info p{
+    color: #fff;
+    margin-bottom: 0;
+}
+.pics {
+    overflow: hidden;
+    border-right: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+}
+.pics img {
+    transition: all ease-in-out 0.4s;
+    height: 250px;
+}
+.pics:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.hot-txt1 {
+    color: #0e1b4d;
+    font-size: 2.5rem;
+}
+.hot-txt2 {
+    color: #0e1b4d;
+    font-style: italic;
+    font-size: 1rem;
+}
+.hotel {
+    margin-bottom: 30px;
+    border: 1px solid #e0e5fa;
+    background: #fff;
+}
+.hotel:hover .hotel-img img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.hotel-img img {
+    transition: 0.3s ease-in-out;
+    width: 400px;
+    height: 250px;
+}
+.hotel-img {
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.hotel h3 {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 5px;
+    padding: 0 20px;
+}
+.hotel a {
+    color: #152b79;
+}
+.hotel a:hover {
+    color: #f82249;
+    text-decoration: none;
+}
+.hotel-stars {
+    padding: 0 20px;
+    margin-bottom: 5px;
+}
+.hotel-stars i {
+    color: #ffc31d;
+}
+.hotel p {
+    margin-bottom: 20px;
+    color: #060c22;
+    font-style: italic;
+    font-size: 15px;
+}
 @media (max-width: 576px) {
     .intro{
         font-size: 3rem;
@@ -87,5 +272,35 @@ body {
     }
     .first-para {
         font-size: 1rem
+    }
+    .event-tabs a {
+        padding: 2px 10px;
+    }
+    .small-flex {
+        display :flex!important;
+    }
+    .f1 {
+        position: relative;
+        width: 30%;
+       
+    }
+    .f1 a {
+        padding: 10px 30px!important; 
+    }
+}
+@media (max-width: 487px) {
+    .event-tabs a {
+      padding: 0px 0px;
+      
+    }
+}
+@media (max-width: 991px) {
+    .event-tabs a {
+        padding: 8px 60px;
+    }
+}
+@media (max-width: 767px) {
+    .event-tabs a {
+      padding: 8px 50px;
     }
 }
