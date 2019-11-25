@@ -288,10 +288,16 @@ body {
         padding: 10px 30px!important; 
     }
 }
-@media (max-width: 487px) {
-    .event-tabs a {
-      padding: 0px 0px;
-      
+@media (max-width: 335px) {
+    .small-flex {
+        display :flex!important;
+    }
+    .f1 {
+        position: relative;
+        width: 30%;  
+    }
+    .f1 a {
+        padding: 5px 10px!important; 
     }
 }
 @media (max-width: 991px) {
