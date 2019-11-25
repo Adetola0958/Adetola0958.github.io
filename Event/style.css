@@ -288,7 +288,7 @@ body {
         padding: 10px 30px!important; 
     }
 }
-@media (max-width: 335px) {
+@media (max-width: 343px) {
     .small-flex {
         display :flex!important;
     }
@@ -297,7 +297,7 @@ body {
         width: 30%;  
     }
     .f1 a {
-        padding: 5px 10px!important; 
+        padding: 6px 10px!important; 
     }
 }
 @media (max-width: 991px) {
